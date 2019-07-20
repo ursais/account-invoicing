@@ -60,21 +60,21 @@
                     </div>
                 </t>
                 <t t-else="else">
-                    <ul t-if="company.partner_id" class="list-inline mb4">
-                        <li t-if="company.partner_id.phone"
+                    <ul t-if="company" class="list-inline mb4">
+                        <li t-if="company.phone"
                             class="list-inline-item">
                             Phone:
-                            <span t-field="company.partner_id.phone"/>
+                            <span t-field="company.phone"/>
                         </li>
-                        <li t-if="company.partner_id.email"
+                        <li t-if="company.email"
                             class="list-inline-item">
                             Email:
-                            <span t-field="company.partner_id.email"/>
+                            <span t-field="company.email"/>
                         </li>
-                        <li t-if="company.partner_id.website"
+                        <li t-if="company.website"
                             class="list-inline-item">
                             Web:
-                            <span t-field="company.partner_id.website"/>
+                            <span t-field="company.website"/>
                         </li>
                     </ul>
                     <div name="financial_infos">
@@ -117,21 +117,21 @@
                     </div>
                 </t>
                 <t t-else="else">
-                    <ul t-if="company.partner_id" class="list-inline mb4">
-                        <li t-if="company.partner_id.phone"
+                    <ul t-if="company" class="list-inline mb4">
+                        <li t-if="company.phone"
                             class="list-inline-item">
                             Phone:
-                            <span t-field="company.partner_id.phone"/>
+                            <span t-field="company.phone"/>
                         </li>
-                        <li t-if="company.partner_id.email"
+                        <li t-if="company.email"
                             class="list-inline-item">
                             Email:
-                            <span t-field="company.partner_id.email"/>
+                            <span t-field="company.email"/>
                         </li>
-                        <li t-if="company.partner_id.website"
+                        <li t-if="company.website"
                             class="list-inline-item">
                             Web:
-                            <span t-field="company.partner_id.website"/>
+                            <span t-field="company.website"/>
                         </li>
                     </ul>
                     <div name="financial_infos">

@@ -15,7 +15,7 @@
     ],
     "data": [
         "views/account_invoice.xml",
-        "views/report_template.xml"
+        "views/report_template.xml",
     ],
     "installable": True,
     "development_status": "Beta",
