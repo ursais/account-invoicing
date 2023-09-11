@@ -1,0 +1,17 @@
+<odoo>
+
+    <menuitem
+        id="account.menu_finance_receivables"
+        name="Customers"
+        parent="account_accountant.menu_accounting"
+        groups="group_account_account_receivable"
+    />
+
+    <menuitem
+        id="account.menu_finance_payables"
+        name="Vendors"
+        parent="account_accountant.menu_accounting"
+        groups="group_account_account_payable"
+    />
+
+</odoo>
