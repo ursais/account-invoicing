@@ -14,4 +14,18 @@
         groups="group_account_account_payable"
     />
 
+    <menuitem
+        id="account.menu_action_account_payments_receivable"
+        name="Payments"
+        parent="account.menu_finance_receivables"
+        groups="account.group_account_invoice"
+    />
+
+    <menuitem
+        id="account.menu_action_account_payments_payable"
+        name="Payments"
+        parent="account.menu_finance_payables"
+        groups="account.group_account_invoice"
+    />
+
 </odoo>
