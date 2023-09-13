@@ -14,7 +14,7 @@
         <field name="category_id" ref="base.module_category_accounting_accounting" />
         <field
             name="implied_ids"
-            eval="[ref('group_account_account_receivable'), ref('group_account_account_payable')]"
+            eval="[(6, 0, [ref('group_account_account_receivable'), ref('group_account_account_payable')])]"
         />
     </record>
 
