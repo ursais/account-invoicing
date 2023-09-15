@@ -11,10 +11,9 @@
     </record>
 
     <record id="account.group_account_invoice" model="res.groups">
-        <field name="category_id" ref="base.module_category_accounting_accounting" />
         <field
             name="implied_ids"
-            eval="[ref('group_account_account_receivable'), ref('group_account_account_payable')]"
+            eval="[(4, ref('group_account_account_receivable')), (4, ref('group_account_account_payable'))]"
         />
     </record>
 
