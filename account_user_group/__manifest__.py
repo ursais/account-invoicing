@@ -13,6 +13,7 @@
     "depends": ["account"],
     "data": [
         "security/account_user_group_security.xml",
+        "security/ir.model.access.csv",
         "views/account_user_group_views.xml",
     ],
 }
