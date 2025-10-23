@@ -5,8 +5,11 @@
         inherit_id="account.report_invoice_document"
         priority="100"
     >
-        <xpath expr="//t[@t-set='display_discount']" position="attributes">
-            <attribute name="t-value">False</attribute>
+        <xpath expr="//t[@t-set='display_discount']" position="replace">
+            <t
+                t-set="display_discount"
+                t-value="any(l.discount1 or l.discount2 or l.discount3 for l in o.invoice_line_ids)"
+            />
         </xpath>
         <xpath expr="//t[@t-set='display_discount']" position="after">
             <t
