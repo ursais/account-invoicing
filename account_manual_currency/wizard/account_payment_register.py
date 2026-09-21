@@ -31,12 +31,12 @@ class AccountPaymentRegister(models.TransientModel):
     @api.model
     def default_get(self, fields_list):
         res = super().default_get(fields_list)
-        if self._context.get("active_model") == "account.move":
-            moves = self.env["account.move"].browse(self._context.get("active_ids", []))
-        elif self._context.get("active_model") == "account.move.line":
+        if self.env.context.get("active_model") == "account.move":
+            moves = self.env["account.move"].browse(self.env.context.get("active_ids", []))
+        elif self.env.context.get("active_model") == "account.move.line":
             moves = (
                 self.env["account.move.line"]
-                .browse(self._context.get("active_ids", []))
+                .browse(self.env.context.get("active_ids", []))
                 .mapped("move_id")
             )
         # Check manual currency

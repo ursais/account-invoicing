@@ -24,7 +24,7 @@ class AccountMove(models.Model):
             not config["test_enable"]
             or (
                 config["test_enable"]
-                and self._context.get("force_check_currecy", False)
+                and self.env.context.get("force_check_currecy", False)
             )
         ) and self.filtered(
             lambda a: a.pricelist_id

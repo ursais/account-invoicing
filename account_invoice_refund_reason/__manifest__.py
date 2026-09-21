@@ -4,7 +4,7 @@
 
 {
     "name": "Account Invoice Refund Reason",
-    "version": "18.0.1.0.0",
+    "version": "20.0.1.0.0",
     "summary": "Account Invoice Refund Reason.",
     "category": "Accounting",
     "author": "Open Source Integrators, "
@@ -12,12 +12,11 @@
     "Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/account-invoicing",
     "data": [
-        "security/ir.model.access.csv",
+        "security/ir.access.csv",
         "data/account.move.refund.reason.csv",
         "views/account_move_view.xml",
         "views/account_move_refund_reason_view.xml",
-        "wizard/account_move_reversal_view.xml",
-    ],
+        "wizard/account_move_reversal_view.xml"],
     "depends": ["account"],
     "license": "AGPL-3",
     "development_status": "Beta",
